@@ -143,9 +143,6 @@ module ram_ws_rs_data_scm
     scm_data
     (
         .clk         ( clk          ),
-    `ifdef PULP_FPGA_EMUL
-        .rst_n       ( rst_n        ),
-    `endif
 
         // Read port
         .ReadEnable  ( req & ~write ),
