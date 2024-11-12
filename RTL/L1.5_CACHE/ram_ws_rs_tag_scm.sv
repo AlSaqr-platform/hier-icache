@@ -94,9 +94,6 @@ module ram_ws_rs_tag_scm
       scm_tag
       (
         .clk           (clk),
-  `ifdef PULP_FPGA_EMUL
-        .rst_n         (rst_n),
-  `endif
 
         // Read port
         .ReadEnable  ( req & ~write ),
